@@ -16,5 +16,4 @@ A movie recommender that recommends movies based on the user's entered emotions.
 
 
 ## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Output](https://user-images.githubusercontent.com/56925232/148508335-9c28a4d0-b241-4a7b-9c08-180a9e13a8cc.jpg)
