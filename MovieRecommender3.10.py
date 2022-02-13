@@ -68,16 +68,16 @@ def get_input():
     elif emotion == "anger":
         giveURL("28")
     # Horror
-    elif emotion in ["fear", "horror", "scary"]:
+    elif emotion == "fear":
         giveURL("27")
     # Comedy
-    elif emotion in ["joy", "happy"]:
+    elif emotion in ["joy", "happy", "happiness"]:
         giveURL("35")
     # Thriller
-    elif emotion == "thrill":
+    elif emotion in ["excitement", "thrill"]:
         giveURL("53")
     # Mystery
-    elif emotion in ["suspense", "mystery"]:
+    elif emotion in ["suspense", "tension"]:
         giveURL("9648")
     # Romance
     elif emotion in ["love", "romance"]:
