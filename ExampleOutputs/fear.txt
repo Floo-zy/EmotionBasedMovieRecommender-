@@ -1,0 +1,25 @@
+Displaying results for Emotion : "fear" 
++----------------------------------------+--------------+---------+
+|               Movie Name               | Release Date | Ratings |
++----------------------------------------+--------------+---------+
+|     The Jack in the Box: Awakening     |  2022-01-03  |   5.5   |
+| Resident Evil: Welcome to Raccoon City |  2021-11-24  |   6.1   |
+|               The House                |  2022-01-14  |   7.1   |
+|                Antlers                 |  2021-10-28  |   6.4   |
+|            Queen of Spades             |  2021-06-11  |   6.4   |
+|                  Two                   |  2021-07-23  |   5.3   |
+|                  Son                   |  2021-08-06  |    6    |
+|               Dark Spell               |  2021-02-11  |   6.8   |
+|                Meander                 |  2021-05-26  |   6.1   |
+|                Carriers                |  2009-09-04  |   6.1   |
+|                 Scream                 |  2022-01-12  |   7.1   |
+|    Paranormal Activity: Next of Kin    |  2021-10-29  |   6.6   |
+| The Conjuring: The Devil Made Me Do It |  2021-05-25  |   7.7   |
+|                 Sator                  |  2019-07-21  |   5.4   |
+|            The Whole Truth             |  2021-12-02  |   6.5   |
+|                Tarumama                |  2021-07-29  |   5.2   |
+|              Dragon Fury               |  2021-06-15  |   6.1   |
+|             The Deep House             |  2021-06-30  |   6.5   |
+|               The Unholy               |  2021-03-31  |   6.8   |
+|             Ripper Untold              |  2021-06-28  |   6.6   |
++----------------------------------------+--------------+---------+

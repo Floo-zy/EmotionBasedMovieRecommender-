@@ -1,0 +1,25 @@
+Displaying results for Emotion : "excitement" 
++--------------------------------------------+--------------+---------+
+|                 Movie Name                 | Release Date | Ratings |
++--------------------------------------------+--------------+---------+
+|                 The Requin                 |  2022-01-28  |    4    |
+|                  The 355                   |  2022-01-05  |   6.2   |
+|                 Red Notice                 |  2021-11-04  |   6.8   |
+|               The King's Man               |  2021-12-22  |   7.1   |
+|               American Siege               |  2022-01-07  |   5.1   |
+|               Last Man Down                |  2021-10-19  |   6.4   |
+|               House of Gucci               |  2021-11-24  |   6.7   |
+|                   Brazen                   |  2022-01-13  |   4.8   |
+|               Mother/Android               |  2021-12-17  |   5.8   |
+|                 Dangerous                  |  2021-11-05  |   6.5   |
+|              Nightmare Alley               |  2021-12-02  |   7.2   |
+| Laura y el misterio del asesino inesperado |  2022-01-13  |   7.4   |
+|              Survive the Game              |  2021-10-08  |   5.8   |
+|                  Fortress                  |  2021-12-17  |   6.2   |
+|               No Time to Die               |  2021-09-29  |   7.5   |
+|                    Two                     |  2021-07-23  |   5.3   |
+|                     F9                     |  2021-05-19  |   7.3   |
+|                    Son                     |  2021-08-06  |    6    |
+|                Looop Lapeta                |  2022-02-04  |   6.6   |
+|                 Dark Spell                 |  2021-02-11  |   6.8   |
++--------------------------------------------+--------------+---------+
