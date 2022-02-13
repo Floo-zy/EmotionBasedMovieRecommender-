@@ -5,7 +5,7 @@ A movie recommender that recommends movies based on the user's entered emotions.
 * [General info](#general-info)
 * [Technologies](#technologies)
 ## Technologies Used:
-* Python 3.9.9
+* Python 3.10
 * [Tabulate](https://pypi.org/project/tabulate/)
 * pathlib
 * requests
