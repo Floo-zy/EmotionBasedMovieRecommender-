@@ -2,6 +2,7 @@ import requests
 from tabulate import tabulate
 from pathlib import Path
 
+emotion : str
 
 def giveURL(x):
     base_url = "https://api.themoviedb.org/3/discover/movie?api_key=87a9f28a9fa52eae1eebdb5012de2c95&with_genres="
@@ -32,6 +33,7 @@ def giveTitles(url):
 
 
 def printResults(finale):
+    global emotion
     file_name = input("Enter file name:") + ".txt"
     file_path = str(Path.cwd()) + "/" + file_name
 
@@ -55,7 +57,7 @@ def get_input():
             anger,
             fear/horror/scary,
             joy/happy,
-            thrill,
+            thrill/excitement,
             suspense/mystery and 
             love
             {'-/'*40}\n:"""
