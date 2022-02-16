@@ -2,7 +2,8 @@ import requests
 from tabulate import tabulate
 from pathlib import Path
 
-emotion : str
+emotion: str
+
 
 def giveURL(x):
     base_url = "https://api.themoviedb.org/3/discover/movie?api_key=87a9f28a9fa52eae1eebdb5012de2c95&with_genres="
@@ -15,12 +16,14 @@ def giveTitles(url):
     data = r.json()
     length_dict = len(data["results"])
 
-    # * Movie Title
-    movies = [data["results"][i]["title"] for i in range(length_dict)]
-    # * Movie Rating
-    ratings = [data["results"][i]["vote_average"] for i in range(length_dict)]
-    # * Movie Release Date
-    rel_date = [data["results"][i]["release_date"] for i in range(length_dict)]
+    # * initialization of lists
+    movies, ratings, rel_date = [], [], []
+
+    # * gather results
+    for i in range(length_dict):
+        movies.append(data["results"][i]["title"])
+        ratings.append(data["results"][i]["vote_average"])
+        rel_date.append(data["results"][i]["release_date"])
 
     # * creating dictionary containing movie data
     finale = {
@@ -33,7 +36,6 @@ def giveTitles(url):
 
 
 def printResults(finale):
-    global emotion
     file_name = input("Enter file name:") + ".txt"
     file_path = str(Path.cwd()) + "/" + file_name
 
@@ -50,17 +52,16 @@ def get_input():
     global emotion
     emotion = str(
         input(
-            f"""
-            {'/-'*40}
+            """
             Enter an emotion:
-            sad,
-            anger,
-            fear/horror/scary,
-            joy/happy,
-            thrill/excitement,
-            suspense/mystery and 
-            love
-            {'-/'*40}\n:"""
+            1. Sad
+            2. Anger
+            3. Fear/Horror/Scary
+            4. Joy/Happy
+            5. Thrill/Excitement
+            6. Suspense/Mystery  
+            7. Love/Romance
+            """
         )
     ).lower()
     # Drama
@@ -93,8 +94,3 @@ def main():
 # * Driver Code
 if __name__ == "__main__":
     main()
-
-
-#!DUMP
-#!DEPRECATED user_votes = [data["results"][i]["vote_count"] for i in range(length_dict)]
-#!DEPRECATED short_desc = [data["results"][i]["overview"] for i in range(length_dict)]
