@@ -2,10 +2,12 @@ import requests
 from tabulate import tabulate
 from pathlib import Path
 
+# * declaring emotion variable
 emotion: str
 
 
 def giveURL(x):
+    # * x refers to the number corresponding to the genre
     base_url = "https://api.themoviedb.org/3/discover/movie?api_key=87a9f28a9fa52eae1eebdb5012de2c95&with_genres="
     main_url = base_url + x
     giveTitles(main_url)
@@ -36,6 +38,7 @@ def giveTitles(url):
 
 
 def printResults(finale):
+    global emotion
     file_name = input("Enter file name:") + ".txt"
     file_path = str(Path.cwd()) + "/" + file_name
 
@@ -50,19 +53,18 @@ def printResults(finale):
 
 def get_input():
     global emotion
-    emotion = str(
-        input(
-            """
+    emotion = input(
+        """
             Enter an emotion:
             1. Sad
             2. Anger
             3. Fear/Horror/Scary
             4. Joy/Happy
             5. Thrill/Excitement
-            6. Suspense/Mystery  
+            6. Suspense/Tension  
             7. Love/Romance
-            """
-        )
+            --->
+        """
     ).lower()
     # Drama
     if emotion == "sad":
@@ -94,3 +96,7 @@ def main():
 # * Driver Code
 if __name__ == "__main__":
     main()
+
+#!DUMP
+#!DEPRECATED user_votes = [data["results"][i]["vote_count"] for i in range(length_dict)]
+#!DEPRECATED short_desc = [data["results"][i]["overview"] for i in range(length_dict)]
