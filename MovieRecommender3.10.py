@@ -88,7 +88,3 @@ def main():
 # * Driver Code
 if __name__ == "__main__":
     main()
-
-#!DUMP
-#!DEPRECATED user_votes = [data["results"][i]["vote_count"] for i in range(length_dict)]
-#!DEPRECATED short_desc = [data["results"][i]["overview"] for i in range(length_dict)]
