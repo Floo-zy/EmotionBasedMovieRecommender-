@@ -14,27 +14,19 @@ def giveURL(x):
 
 
 def giveTitles(url):
-    r = requests.get(url)
-    data = r.json()
-    length_dict = len(data["results"])
+    response = requests.get(url)
+    data = response.json()
+    movies = []
 
-    # * initialization of lists
-    movies, ratings, rel_date = [], [], []
+    for movie in data["results"]:
+        temp_dict = {
+            "Title": movie["title"],
+            "Release_date": movie["release_date"],
+            "Rating": movie["vote_average"],
+        }
+        movies.append(temp_dict)
 
-    # * gather results
-    for i in range(length_dict):
-        movies.append(data["results"][i]["title"])
-        ratings.append(data["results"][i]["vote_average"])
-        rel_date.append(data["results"][i]["release_date"])
-
-    # * creating dictionary containing movie data
-    finale = {
-        "Movie Name": movies,
-        "Release Date": rel_date,
-        "Ratings": ratings,
-    }
-
-    printResults(finale)
+    printResults(movies)
 
 
 def printResults(finale):
