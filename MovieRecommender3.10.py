@@ -8,7 +8,7 @@ emotion: str
 
 def giveURL(x):
     # * x refers to the number corresponding to the genre
-    base_url = "https://api.themoviedb.org/3/discover/movie?api_key=87a9f28a9fa52eae1eebdb5012de2c95&with_genres="
+    base_url = "https://api.themoviedb.org/3/discover/movie?api_key=<enter_your_api_key_from_tmdb_here>&with_genres="
     main_url = base_url + x
     giveTitles(main_url)
 
